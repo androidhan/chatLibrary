@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="45dip"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:onClick="back" >
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="11dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ease_common_tab_bg" />
+
+</LinearLayout>

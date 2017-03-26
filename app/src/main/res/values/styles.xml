@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppBaseRootTheme">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <!-- toolBar样式 -->
+    <style name="AppBaseRootTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- toolbar（actionbar）颜色 -->
+
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+
+        <item name="colorPrimary">#009F43</item>
+        <!-- 状态栏颜色 -->
+        <!--  <item name="colorPrimaryDark">#009F43</item>-->
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <!-- SearchView -->
+        <!-- 溢出的菜单颜色 -->
+        <item name="colorControlNormal">@android:color/white</item>
+        <!-- 控件的统一颜色 -->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>
