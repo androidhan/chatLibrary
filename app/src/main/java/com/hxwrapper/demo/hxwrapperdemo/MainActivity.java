@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
     TextView mLogout;
 
 
+
     @OnClick(R.id.chat)
     void onClickForChat(){
         ConversationActivity.startActivity(this);

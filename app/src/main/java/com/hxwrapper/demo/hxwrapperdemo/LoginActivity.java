@@ -72,10 +72,20 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onError(int mI, String mS) {
-                if(EaseCommonUtils.isNetWorkConnected(LoginActivity.this)){
-                    Toast.makeText(LoginActivity.this, "网络异常", Toast.LENGTH_SHORT).show();
+                if(!EaseCommonUtils.isNetWorkConnected(LoginActivity.this)){
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(LoginActivity.this, "网络异常", Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 }else{
-                    Toast.makeText(LoginActivity.this, "密码错误", Toast.LENGTH_SHORT).show();
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(LoginActivity.this, "密码错误", Toast.LENGTH_SHORT).show();
+                        }
+                    });
                 }
             }
 
